@@ -1,0 +1,6 @@
+**/data
+**/dataset
+**/__pycache__
+**/.ipynb_checkpoints
+**/.json
+.env

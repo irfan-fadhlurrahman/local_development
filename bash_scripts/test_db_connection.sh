@@ -3,6 +3,6 @@
 export POSTGRES_HOST=localhost
 
 # Execute the script
-cd ~/local_development/containers
+cd ~/local_development
 pipenv shell
 python ~/local_development/utils/db_connection.py

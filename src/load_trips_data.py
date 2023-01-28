@@ -1,20 +1,11 @@
 import os
 import time
-import logging
 import argparse
 
 import pandas as pd
 from utils.db_connection import PostgresConnection, get_database_credentials
 
 from pathlib import Path
-
-# Define logging
-# logging.basicConfig(
-#     filename='ingestion.log',
-#     filemode='a',
-#     format=f'%(asctime)s - {__file__} %(message)s', 
-#     level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S'
-# )
 
 class NYCGovTaxiToPostgresPipeline:
     
@@ -82,7 +73,7 @@ def run(params):
     header = next(pipeline.extract(url, chunksize=chunksize)).head(n=0)
     pipeline.load(header, table_name, if_exists='replace')
     
-    # logging.info(f"Extracting the data from {url}")
+    print(f"Extracting the data from {url}")
     
     # Load data into a created table
     for df in pipeline.extract(url, chunksize=chunksize):
@@ -90,9 +81,9 @@ def run(params):
         pipeline.load(df, table_name, if_exists='append')
         end = time.time()
         
-        # logging.info(f"Ingestion of {len(df)} rows to table {table_name} took {end-start:.2f} seconds")
+        print(f"Ingestion of {len(df)} rows to table {table_name} took {end-start:.2f} seconds")
     
-    # logging.info(f"Ingestion to table {table_name} finished")
+    print(f"Ingestion to table {table_name} finished")
     
 if __name__ == "__main__":
     # Initialize

@@ -27,7 +27,7 @@ echo "Make docker-compose executable"
 sleep 2
 chmod +x docker-compose
 
-echo "add path to .bashrc (copy this export PATH="${HOME}/bin:${PATH})"
+echo "add path to .bashrc (copy this export PATH=HOME/bin:PATH)"
 sleep 6
 nano ~/.bashrc
 

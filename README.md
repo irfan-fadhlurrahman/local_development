@@ -10,7 +10,7 @@ To create a template for installing Docker, Docker Compose and Miniconda easily 
 * pgAdmin (v.4)
 
 ## Data Sources:
-* NYC Taxi Trips Data: https://github.com/DataTalksClub/nyc-tlc-data/releases
+NYC Taxi Trips Data: https://github.com/DataTalksClub/nyc-tlc-data/releases
 
 ## Setup 
 Please refer to this article: [How to Run and Fill PostgreSQL database in any environment using Docker](https://medium.com/@irfanfadh43/running-and-filling-postgresql-database-in-any-environment-using-docker-270e43e4a127)

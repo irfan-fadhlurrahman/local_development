@@ -1,6 +1,9 @@
 # Local Development
 
-To create a template for installing Docker, Docker Compose and Miniconda easily in any environment.
+The object of this project:
+* To create a template for installing Docker, Docker Compose and Miniconda easily in any environment easily.
+* To run a database using Docker compose and to ingest dataset into created database using Docker
+
 
 ## Tech Stacks
 * Python (v.3.9)

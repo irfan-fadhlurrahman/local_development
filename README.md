@@ -1,6 +1,6 @@
 # Local Development
 
-The object of this project:
+The objective of this project:
 * To create a template for installing Docker, Docker Compose and Miniconda easily in any environment easily.
 * To run a database using Docker compose and to ingest dataset into created database using Docker
 

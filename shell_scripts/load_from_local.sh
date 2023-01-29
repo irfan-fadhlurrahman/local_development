@@ -5,7 +5,7 @@ export POSTGRES_HOST=localhost
 # Activate virtual environment
 cd ~/local_development/containers; pipenv shell
 
-# Append current project directory to PYTHONPATH
+# Append current project directory to PYTHONPATH to add package path
 export PYTHONPATH="${PYTHONPATH}:~/local_development"
 
 # Run the script
@@ -20,5 +20,5 @@ python ~/local_development/src/load_trips_data.py \
 python ~/local_development/src/load_trips_data.py \
 --datetime_columns tpep_pickup_datetime tpep_dropoff_datetime \
 --url https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz \
---table_name taxi_zones \
+--table_name yellow_taxi_trips \
 --chunksize 100000 

@@ -14,5 +14,5 @@ docker run -it --env-file=.env --network=local_development_default \
 load_trips_data:v01 \
 --datetime_columns tpep_pickup_datetime tpep_dropoff_datetime \
 --url https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz \
---table_name taxi_zones \
+--table_name yellow_taxi_trips \
 --chunksize 100000

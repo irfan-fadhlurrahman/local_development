@@ -4,7 +4,7 @@ sleep 2
 mkdir ~/bin
 cd ~/bin
 
-echo “download miniconda for linux”
+echo "download miniconda for linux"
 sleep 2
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_22.11.1-1-Linux-x86_64.sh
 

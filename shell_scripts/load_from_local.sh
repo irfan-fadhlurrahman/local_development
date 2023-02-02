@@ -3,7 +3,8 @@
 export POSTGRES_HOST=localhost
 
 # Activate virtual environment
-cd ~/local_development/containers; pipenv shell
+cd ~/local_development
+pipenv shell
 
 # Append current project directory to PYTHONPATH to add package path
 export PYTHONPATH="${PYTHONPATH}:~/local_development"

@@ -1,7 +1,7 @@
 #!/usr/bin/bash
-echo "Update and upgrade your terminal"
+echo "Update your terminal"
 sleep 2
-sudo apt update -y & sudo apt upgrade -y
+sudo apt update
 
 echo "Install docker.io"
 sleep 2
